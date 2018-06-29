@@ -3,6 +3,15 @@
 ## Overview
 This AWS Lambda function allows you to delete the old Elasticsearch indexes using SigV4Auth authentication. You configure the AWS Elasticsearch Access Policy authorizing the Lambda Role or the AWS Account number instead of using the IP address whitelist.
 
+## Mira Deployment
+
+Install Serverless CLI and setup AWS credentials.
+
+Run:
+```
+make deploy branch=staging|prod
+```
+
 ## Getting Started
 ### How To install
 
