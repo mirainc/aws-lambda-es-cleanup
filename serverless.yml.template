@@ -1,5 +1,5 @@
 # serverless.yml
-service: es-cleanup-lambda
+service: es-cleanup-lambda-${ENVIRONMENT}
 
 provider:
   name: aws
@@ -29,7 +29,7 @@ provider:
 functions:
   es-cleanup-lambda:
     handler: es-cleanup.lambda_handler
-    name: es-cleanup-lambda
+    name: es-cleanup-lambda-${ENVIRONMENT}
     description: ES old index removal
     runtime: python2.7
     memorySize: "128"
